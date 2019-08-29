@@ -35,7 +35,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("props", this.props);
     return (
       <div>
         <Header />
@@ -59,10 +58,12 @@ class App extends React.Component {
   }
 }
 
+//this allows you to access state in the component
 const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser
 });
 
+//this fires off the actions to the root-reducer
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
