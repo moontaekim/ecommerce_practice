@@ -9,7 +9,7 @@ import { store, persistor } from "./redux/store";
 import "./index.css";
 import App from "./App";
 
-console.log("state", store.getState());
+// console.log("state", store.getState());
 
 ReactDOM.render(
   <Provider store={store}>
